@@ -20,25 +20,11 @@ const DeleteEvent = () => {
 
   return (
     <div>
-      {deletedEvent && (
-        <div>
-          <h2>Evento Eliminado</h2>
-          <p>El evento "{deletedEvent.name}" ha sido eliminado.</p>
-          <p>
-            Puedes volver a la lista de eventos haciendo clic en el siguiente
-            boton:
-          </p>
-
-          <Link to="/events">
-            <button>Volver a la lista de eventos</button>
-          </Link>
-        </div>
-      )}
       {!deletedEvent && (
         <div>
           <h2>Eliminar Evento</h2>
           <p>
-            ¿Estás seguro de que quieres eliminar el evento "{event.name}"?
+            ¿Estás seguro de que quieres eliminar el evento que esta a nombre de: "{event.name}"?
           </p>{" "}
           <br />
           <div style={{ display: "flex", justifyContent: "center" }}>

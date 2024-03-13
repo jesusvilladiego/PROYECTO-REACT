@@ -87,7 +87,7 @@ const EditEvent = () => {
               <input
                 className="input"
                 type="text"
-                name="descipcion"
+                name="descripcion"
                 value={updatedEvent.descripcion}
                 onChange={handleChange}
               />
